@@ -22,13 +22,15 @@ import admin from './admin';
 import navbar from '../components/navbar/navbar.component';
 import footer from '../components/footer/footer.component';
 import main from './main/main.component';
+import show from './checkout/show/show.component';
+import checkout from './checkout/checkout.component';
 import constants from './app.constants';
 import util from '../components/util/util.module';
 
 import './app.css';
 
 angular.module('cleanRouteApp', [ngCookies, ngResource, ngSanitize, ngRoute, _Auth, account, admin,
-  navbar, footer, main, constants, util
+  navbar, footer, main, show, checkout, constants, util
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {
