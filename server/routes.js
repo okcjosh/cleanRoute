@@ -42,6 +42,7 @@ export default function(app) {
 
       } else {
         transactionErrors = result.errors.deepErrors();
+        req.flash('error', {msg: formatErrors(transactionErrors)});
         res.redirect('checkout/new');
       }
     });

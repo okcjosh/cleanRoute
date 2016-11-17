@@ -3,7 +3,7 @@
 export default function($routeProvider) {
   'ngInject';
   $routeProvider
-    .when('/checkout/show', {
+    .when('/checkout/new', {
       template: '<show></show>'
     });
 }
